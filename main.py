@@ -17,7 +17,7 @@ def name(value):
 
 @app.route('/about')
 def direct():
-    return "My first flask App :)"
+    return "My first flask App :) :)"
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
