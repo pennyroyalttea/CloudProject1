@@ -15,6 +15,10 @@ def name(value):
     val = {"value": value}
     return jsonify(val)
 
+@app.route('/about')
+def direct():
+    return "My first flask App :)"
+
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
